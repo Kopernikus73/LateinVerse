@@ -367,8 +367,8 @@
         }
     }
 
-    /* iPad-specific styles */
-    @media (min-width: 768px) and (max-width: 1024px) {
+    /* iPad-specific styles for portrait mode */
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
         .declensions {
             padding: 1rem;
         }
@@ -395,5 +395,33 @@
             padding: 10px;
         }
     }
+
+    /* iPad-specific styles for landscape mode */
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        .declensions {
+            padding: 1rem;
+        }
+
+        .category-list {
+            grid-template-areas:
+            "table1 table2"
+            "table3 table4"
+            "table5 table6";
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .category {
+            padding: 1rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+    }
 </style>
+
 
