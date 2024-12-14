@@ -287,7 +287,6 @@
         grid-area: table5;
     }
 
-
     .category {
         flex: 1 1 100%;
         background: #1e1e1e;
@@ -359,45 +358,41 @@
     }
 
     @media (max-width: 768px) {
+        .category {
+            flex: 1 1 100%;
+        }
+
         .category-list {
-            display: grid;
-            gap: 1.5rem;
-            grid-template-areas:
-        "table1 table0 table0"
-        "table4 table0 table0"
-        "table5 table6 table7";
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: auto;
+            flex-direction: column;
         }
     }
 
-    @media all and (device-width: 1024px) and (device-height: 768px) {
+    /* iPad-specific styles */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .declensions {
+            padding: 1rem;
+        }
+
         .category-list {
-            display: grid;
-            gap: 1.5rem;
             grid-template-areas:
-                "table1"
-                "table2"
-                "table3"
-                "table4"
-                "table5";
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: auto;
-        }
-        .category-list #table1 {
-            grid-area: table1;
+            "table1"
+            "table2"
+            "table3"
+            "table4"
+            "table5";
+            grid-template-columns: 1fr;
         }
 
-        .category-list #table2 {
-            grid-area: table2;
+        .category {
+            padding: 1rem;
         }
 
-        .category-list #table4 {
-            grid-area: table4;
+        h2 {
+            font-size: 1.5rem;
         }
 
-        .category-list #table5 {
-            grid-area: table5;
+        th, td {
+            padding: 10px;
         }
     }
 </style>
