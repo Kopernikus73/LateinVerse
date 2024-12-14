@@ -359,12 +359,31 @@
     }
 
     @media (max-width: 768px) {
-        .category {
-            flex: 1 1 100%;
-        }
-
         .category-list {
-            flex-direction: column;
+            display: grid;
+            gap: 1.5rem;
+            grid-template-areas:
+        "table1 table0 table0"
+        "table4 table0 table0"
+        "table5 table6 table7";
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+        }
+    }
+
+    /* iPad-specific styles */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .category-list {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-areas:
+                "table1"
+                "table2"
+                "table3"
+                "table4"
+                "table5";
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
         }
     }
 </style>
