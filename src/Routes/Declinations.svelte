@@ -371,8 +371,7 @@
         }
     }
 
-    /* iPad-specific styles */
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media all and (device-width: 1024px) and (device-height: 768px) {
         .category-list {
             display: grid;
             gap: 1.5rem;
