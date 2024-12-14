@@ -384,6 +384,21 @@
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: auto;
         }
+        .category-list #table1 {
+            grid-area: table1;
+        }
+
+        .category-list #table2 {
+            grid-area: table2;
+        }
+
+        .category-list #table4 {
+            grid-area: table4;
+        }
+
+        .category-list #table5 {
+            grid-area: table5;
+        }
     }
 </style>
 
