@@ -16,7 +16,7 @@
 </script>
 
 <div class="home">
-    <h1><img src="../../public/letter-l.svg" alt="L" width="128" height="128"/>atein Verse</h1>
+    <h1><img src="letter-l.svg" alt="L" width="128" height="128"/>atein Verse</h1>
     <div class="item-list">
         <span role="button" tabindex="0" on:click={goToGrammar} on:keydown={handleKeyDown} class="grammar"> Grammatik </span>
         <span role="button" tabindex="0" on:click={goToVocab} on:keydown={handleKeyDown} class="vocabulary"> Vokabeln </span>
