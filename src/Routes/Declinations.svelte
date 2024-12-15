@@ -422,6 +422,35 @@
             padding: 10px;
         }
     }
+    @media (max-width: 768px){
+        .declensions {
+            padding: 0.5rem;
+        }
+
+        .category-list {
+            grid-template-areas:
+            "table1"
+            "table2"
+            "table3"
+            "table4"
+            "table5"
+            "table6";
+            grid-template-columns: 1fr;
+        }
+
+        .category {
+            padding: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        th, td {
+            padding: 5px;
+        }
+    }
+
 </style>
 
 
