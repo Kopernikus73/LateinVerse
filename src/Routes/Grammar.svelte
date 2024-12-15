@@ -4,8 +4,11 @@
     function goBack() {
         push('/');
     }
-    function goToDeclinations() {
+    function goToDeclensions() {
         push('/grammar/declensions');
+    }
+    function goToConjugations() {
+        push('/grammar/conjugations');
     }
     function handleKeyDown(event: KeyboardEvent) {
         if (event.key === 'Enter' || event.key === ' ') {
@@ -21,7 +24,8 @@
     </div>
     <h1>Grammatik</h1>
     <div class="item-list">
-        <span role="button" tabindex="0" on:click={goToDeclinations} on:keydown={handleKeyDown} class="declensions"> Deklinationen </span>
+        <span role="button" tabindex="0" on:click={goToDeclensions} on:keydown={handleKeyDown} class="declensions"> Deklinationen </span>
+        <span role="button" tabindex="0" on:click={goToConjugations} on:keydown={handleKeyDown} class="declensions"> Konjugationen </span>
     </div>
 </div>
 
