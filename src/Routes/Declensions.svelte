@@ -1,4 +1,22 @@
+<script lang="ts">
+    import { push } from 'svelte-spa-router';
+
+    function goBack() {
+        push('/grammar');
+    }
+
+    function handleKeyDown(event: KeyboardEvent) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            goBack();
+        }
+    }
+</script>
+
 <div class="declensions">
+    <div class="back-button">
+        <span role="button" tabindex="0" on:click={goBack} on:keydown={handleKeyDown} class="back">Back</span>
+    </div>
     <div class="category-list">
         <div class="category" id="table1">
             <h2>o - Deklination (m)</h2>
@@ -13,33 +31,33 @@
                 <tbody>
                 <tr>
                     <td>Nominativ</td>
-                    <td>serv - <span>us</span> / <strong>os</strong></td>
-                    <td>serv - <span>i</span></td>
+                    <td>serv - <span class="declension">us</span> / <span class="second-declension">os</span></td>
+                    <td>serv - <span class="declension">i</span></td>
                 </tr>
                 <tr>
                     <td>Genitiv</td>
-                    <td>serv - <span>i</span></td>
-                    <td>serv - <span>orum</span> / <strong>um</strong></td>
+                    <td>serv - <span class="declension">i</span></td>
+                    <td>serv - <span class="declension">orum</span> / <span class="second-declension">um</span></td>
                 </tr>
                 <tr>
                     <td>Dativ</td>
-                    <td>serv - <span>o</span></td>
-                    <td>serv - <span>is</span></td>
+                    <td>serv - <span class="declension">o</span></td>
+                    <td>serv - <span class="declension">is</span></td>
                 </tr>
                 <tr>
                     <td>Akkusativ</td>
-                    <td>serv - <span>um</span> / <strong>om</strong></td>
-                    <td>serv - <span>os</span></td>
+                    <td>serv - <span class="declension">um</span> / <span class="second-declension">om</span></td>
+                    <td>serv - <span class="declension">os</span></td>
                 </tr>
                 <tr>
                     <td>Ablativ</td>
-                    <td>serv - <span>o</span></td>
-                    <td>serv - <span>is</span></td>
+                    <td>serv - <span class="declension">o</span></td>
+                    <td>serv - <span class="declension">is</span></td>
                 </tr>
                 <tr>
                     <td>Vokativ</td>
-                    <td>serv - <span>e</span></td>
-                    <td>serv - <span>i</span></td>
+                    <td>serv - <span class="declension">e</span></td>
+                    <td>serv - <span class="declension">i</span></td>
                 </tr>
                 <tr>
                     <td>Lokativ</td>
@@ -62,33 +80,33 @@
                 <tbody>
                 <tr>
                     <td>Nominativ</td>
-                    <td>for - <span>um</span> / <strong>om</strong></td>
-                    <td>for - <span>a</span></td>
+                    <td>for - <span class="declension">um</span> / <span class="second-declension">om</span></td>
+                    <td>for - <span class="declension">a</span></td>
                 </tr>
                 <tr>
                     <td>Genitiv</td>
-                    <td>for - <span>i</span></td>
-                    <td>for - <span>orum</span> / <strong>um</strong></td>
+                    <td>for - <span class="declension">i</span></td>
+                    <td>for - <span class="declension">orum</span> / <span class="second-declension">um</span></td>
                 </tr>
                 <tr>
                     <td>Dativ</td>
-                    <td>for - <span>o</span></td>
-                    <td>for - <span>is</span></td>
+                    <td>for - <span class="declension">o</span></td>
+                    <td>for - <span class="declension">is</span></td>
                 </tr>
                 <tr>
                     <td>Akkusativ</td>
-                    <td>for - <span>um</span></td>
-                    <td>for - <span>a</span></td>
+                    <td>for - <span class="declension">um</span></td>
+                    <td>for - <span class="declension">a</span></td>
                 </tr>
                 <tr>
                     <td>Ablativ</td>
-                    <td>for - <span>o</span></td>
-                    <td>for - <span>is</span></td>
+                    <td>for - <span class="declension">o</span></td>
+                    <td>for - <span class="declension">is</span></td>
                 </tr>
                 <tr>
                     <td>Vokativ</td>
-                    <td>for - <span>um</span></td>
-                    <td>for - <span>a</span></td>
+                    <td>for - <span class="declension">um</span></td>
+                    <td>for - <span class="declension">a</span></td>
                 </tr>
                 <tr>
                     <td>Lokativ</td>
@@ -112,32 +130,32 @@
                 <tr>
                     <td>Nominativ</td>
                     <td>puer</td>
-                    <td>puer - <span>i</span></td>
+                    <td>puer - <span class="declension">i</span></td>
                 </tr>
                 <tr>
                     <td>Genitiv</td>
-                    <td>puer - <span>i</span></td>
-                    <td>puer - <span>orum</span> / <strong>um</strong></td>
+                    <td>puer - <span class="declension">i</span></td>
+                    <td>puer - <span class="declension">orum</span> / <span class="second-declension">um</span></td>
                 </tr>
                 <tr>
                     <td>Dativ</td>
-                    <td>puer - <span>o</span></td>
-                    <td>puer - <span>is</span></td>
+                    <td>puer - <span class="declension">o</span></td>
+                    <td>puer - <span class="declension">is</span></td>
                 </tr>
                 <tr>
                     <td>Akkusativ</td>
-                    <td>puer - <span>um</span> / <strong>om</strong></td>
-                    <td>puer - <span>os</span></td>
+                    <td>puer - <span class="declension">um</span> / <span class="second-declension">om</span></td>
+                    <td>puer - <span class="declension">os</span></td>
                 </tr>
                 <tr>
                     <td>Ablativ</td>
-                    <td>puer - <span>o</span></td>
-                    <td>puer - <span>is</span></td>
+                    <td>puer - <span class="declension">o</span></td>
+                    <td>puer - <span class="declension">is</span></td>
                 </tr>
                 <tr>
                     <td>Vokativ</td>
                     <td>puer</td>
-                    <td>puer - <span>i</span></td>
+                    <td>puer - <span class="declension">i</span></td>
                 </tr>
                 <tr>
                     <td>Lokativ</td>
@@ -160,33 +178,33 @@
                 <tbody>
                 <tr>
                     <td>Nominativ</td>
-                    <td>puell - <span>a</span></td>
-                    <td>puell - <span>ae</span></td>
+                    <td>puell - <span class="declension">a</span></td>
+                    <td>puell - <span class="declension">ae</span></td>
                 </tr>
                 <tr>
                     <td>Genitiv</td>
-                    <td>puell - <span>ae</span> / <strong>ai</strong></td>
-                    <td>puell - <span>arum</span> / <strong>um</strong></td>
+                    <td>puell - <span class="declension">ae</span> / <span class="second-declension">ai</span></td>
+                    <td>puell - <span class="declension">arum</span> / <span class="second-declension">um</span></td>
                 </tr>
                 <tr>
                     <td>Dativ</td>
-                    <td>puell - <span>ae</span> / <strong>ai</strong></td>
-                    <td>puell - <span>is</span> / <strong>abus</strong></td>
+                    <td>puell - <span class="declension">ae</span> / <span class="second-declension">ai</span></td>
+                    <td>puell - <span class="declension">is</span> / <span class="second-declension">abus</span></td>
                 </tr>
                 <tr>
                     <td>Akkusativ</td>
-                    <td>puell - <span>am</span></td>
-                    <td>puell - <span>as</span></td>
+                    <td>puell - <span class="declension">am</span></td>
+                    <td>puell - <span class="declension">as</span></td>
                 </tr>
                 <tr>
                     <td>Ablativ</td>
-                    <td>puell - <span>a</span> / <strong>ad</strong></td>
-                    <td>puell - <span>is</span> / <strong>abus</strong></td>
+                    <td>puell - <span class="declension">a</span> / <span class="second-declension">ad</span></td>
+                    <td>puell - <span class="declension">is</span> / <span class="second-declension">abus</span></td>
                 </tr>
                 <tr>
                     <td>Vokativ</td>
-                    <td>puell - <span>a</span></td>
-                    <td>puell - <span>ae</span></td>
+                    <td>puell - <span class="declension">a</span></td>
+                    <td>puell - <span class="declension">ae</span></td>
                 </tr>
                 <tr>
                     <td>Lokativ</td>
@@ -210,27 +228,27 @@
                 <tr>
                     <td>Nominativ</td>
                     <td>mercator</td>
-                    <td>mercator - <span>es</span> / <strong>is</strong></td>
+                    <td>mercator - <span class="declension">es</span> / <span class="second-declension">is</span></td>
                 </tr>
                 <tr>
                     <td>Genitiv</td>
-                    <td>mercator - <span>is</span></td>
-                    <td>mercator - <span>um</span> / <strong>ium</strong></td>
+                    <td>mercator - <span class="declension">is</span></td>
+                    <td>mercator - <span class="declension">um</span> / <span class="second-declension">ium</span></td>
                 </tr>
                 <tr>
                     <td>Dativ</td>
-                    <td>mercator - <span>i</span> / <strong>e</strong></td>
-                    <td>mercator - <span>ibus</span></td>
+                    <td>mercator - <span class="declension">i</span> / <span class="second-declension">e</span></td>
+                    <td>mercator - <span class="declension">ibus</span></td>
                 </tr>
                 <tr>
                     <td>Akkusativ</td>
-                    <td>mercator - <span>em</span></td>
-                    <td>mercator - <span>es</span> / <strong>is</strong></td>
+                    <td>mercator - <span class="declension">em</span></td>
+                    <td>mercator - <span class="declension">es</span> / <span class="second-declension">is</span></td>
                 </tr>
                 <tr>
                     <td>Ablativ</td>
-                    <td>mercator - <span>e</span></td>
-                    <td>mercator - <span>ibus</span></td>
+                    <td>mercator - <span class="declension">e</span></td>
+                    <td>mercator - <span class="declension">ibus</span></td>
                 </tr>
                 <tr>
                     <td>Vokativ</td>
@@ -252,9 +270,10 @@
     .declensions {
         color: #e0e0e0;
         background: #121212;
-        padding: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         border-radius: 12px;
-        max-width: 95%;
+        max-width: 100%;
         margin: auto;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         overflow-y: auto;
@@ -311,48 +330,48 @@
     }
 
     thead tr {
-        background: #333333; /* Dunkler Kopfbereich */
+        background: #333333;
     }
 
     th, td {
         padding: 12px;
-        border: 1px solid #444444; /* Kontrastreiche Rahmen */
+        border: 1px solid #444444;
     }
 
     tbody tr:nth-child(1) {
-        background: #005f73; /* Dunkles Blau-Grau für Vokativ */
+        background: #005f73;
     }
 
     tbody tr:nth-child(2) {
-        background: #9f6f1f; /* Dunkles Grau für Nominativ */
+        background: #9f6f1f;
     }
 
     tbody tr:nth-child(3) {
-        background: #542e71; /* Dunkles Blau für Genitiv */
+        background: #542e71;
     }
 
     tbody tr:nth-child(4) {
-        background: #8b1e3f; /* Dunkles Gelb/Braun für Dativ */
+        background: #8b1e3f;
     }
 
     tbody tr:nth-child(5) {
-        background: #3a5a40; /* Dunkles Violett für Akkusativ */
+        background: #3a5a40;
     }
 
     tbody tr:nth-child(6) {
-        background: #2d4059; /* Dunkles Rot für Ablativ */
+        background: #2d4059;
     }
 
     tbody tr:nth-child(7) {
-        background: #000; /* Dunkles Grün für Ablativ */
+        background: #000;
     }
 
-    span {
+    span.declension {
         font-weight: bold;
         color: #80cbc4;
     }
 
-    strong {
+    span.second-declension {
         font-weight: bold;
         color: #ffab40;
     }
@@ -452,6 +471,34 @@
         }
     }
 
+    span.back{
+        background-color: darkred;
+        width: 3.5rem;
+        font-size: 1rem;
+        display: inline-block;
+        padding: 10px 20px;
+        margin-bottom: 0.5rem;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 8px;
+        border: #fff solid 2px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+        text-decoration: none;
+    }
+    span.back:hover {
+        transform: scale(1.2);
+        background-color: red;
+        cursor: pointer;
+    }
+    .back-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0.5rem;
+        padding-bottom: -1cm;
+    }
 </style>
 
 

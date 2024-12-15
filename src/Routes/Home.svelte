@@ -15,8 +15,8 @@
     }
 </script>
 
-<div class="">
-    <h1><img src="../assets/letter-l.svg" alt="L" width="512" height="512"/> atein Verse</h1>
+<div class="home">
+    <h1><img src="../../public/letter-l.svg" alt="L" width="128" height="128"/>atein Verse</h1>
     <div class="item-list">
         <span role="button" tabindex="0" on:click={goToGrammar} on:keydown={handleKeyDown} class="grammar"> Grammatik </span>
         <span role="button" tabindex="0" on:click={goToVocab} on:keydown={handleKeyDown} class="vocabulary"> Vokabeln </span>
@@ -25,9 +25,8 @@
 
 
 <style>
-    h1 {
+    h1{
         text-align: center;
-        padding: 0.5rem;
         font-size: 7rem;
     }
 
@@ -42,7 +41,6 @@
     span {
         display: inline-block; /* Makes the span behave more like a button */
         padding: 10px 20px;
-
         color: #ffffff;
         font-size: 1.5rem;
         width: 10rem;
@@ -63,16 +61,5 @@
     }
     span:hover {
         transform: scale(1.05); /* Slight zoom effect */
-    }
-
-    /* Focus effect for keyboard users */
-    span:focus {
-        outline: 2px solid #ffffff;
-        outline-offset: 2px;
-    }
-
-    /* Active effect when the element is clicked */
-    span:active {
-        transform: scale(0.95); /* Shrink effect on click */
     }
 </style>
