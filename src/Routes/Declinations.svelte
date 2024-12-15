@@ -1,7 +1,7 @@
 <div class="declensions">
     <div class="category-list">
         <div class="category" id="table1">
-            <h2>o - Deklination (maskulinum)</h2>
+            <h2>o - Deklination (m)</h2>
             <table>
                 <thead>
                 <tr>
@@ -50,7 +50,7 @@
             </table>
         </div>
         <div class="category" id="table2">
-            <h2>o - Deklination (neutrum)</h2>
+            <h2>o - Deklination (n)</h2>
             <table>
                 <thead>
                 <tr>
@@ -99,7 +99,7 @@
             </table>
         </div>
         <div class="category" id="table3">
-            <h2>o - Deklination (maskulinum) [-er]</h2>
+            <h2>o - Deklination (m) [-er]</h2>
             <table>
                 <thead>
                 <tr>
@@ -397,7 +397,7 @@
     }
 
     /* iPad-specific styles for landscape mode */
-    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    @media (max-width: 1260px) and (orientation: landscape) {
         .declensions {
             padding: 1rem;
         }
