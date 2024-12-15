@@ -405,8 +405,9 @@
         .category-list {
             grid-template-areas:
             "table1 table2"
-            "table3 table4"
-            "table5 table6";
+            "table3 table0"
+            "table4 table0"
+            "table5 table0";
             grid-template-columns: repeat(2, 1fr);
         }
 

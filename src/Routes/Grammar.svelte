@@ -2,7 +2,7 @@
     import { push } from 'svelte-spa-router';
 
     function goToDeclinations() {
-        push('/grammar/declinations');
+        push('/grammar/declensions');
     }
     function handleKeyDown(event: KeyboardEvent) {
         if (event.key === 'Enter' || event.key === ' ') {
@@ -13,13 +13,7 @@
 </script>
 
 
-<span
-        role="button"
-        tabindex="0"
-        on:click={goToDeclinations}
-        on:keydown={handleKeyDown}>
-    Deklinationen
-</span>
+<span role="button" tabindex="0" on:click={goToDeclinations} on:keydown={handleKeyDown}> Deklinationen </span>
 
 <style>
     span {
