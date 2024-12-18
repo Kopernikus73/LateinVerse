@@ -8,14 +8,14 @@
             id: 0,
             description: "Die KNG Kongruenz beschreibt das Gleichseien des Kasus (K) Nummerus (N) und Genus (G) zweier Wörter.",
             example: '"Forum" steht im Nom. Sgl. n. Ein Wort, das KNG kongruent dazu steht müsste also ebenfalls im Nom. Sgl. n. stehen. Z.B. "magnum" (von magnus)',
-            height: 0
+            height: 100
         },
         {
             name: "Kasus",
             id: 1,
             description: "Der Kasus (Fall) ist eine der drei Deklinationskategorien. Jedes Substantiv, Adjektiv, Partizip, Pronomen, usw. hat einen zugewiesenen Kasus. Dieser ist am der Endung des Wortes abzulesen",
             example:  "Servus -> Nominativ (Die Endung '-us' deutet hier auf den Nominativ hin)",
-            height: 0
+            height: 100
         }
     ];
 
