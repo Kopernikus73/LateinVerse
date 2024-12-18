@@ -11,15 +11,19 @@ import PPP from "./Routes/Grammar/Participium/PPP.svelte";
 import PPA from "./Routes/Grammar/Participium/PPA.svelte";
 import PFA from "./Routes/Grammar/Participium/PFA.svelte";
 import ACI from "./Routes/Grammar/SentenceStructures/ACI.svelte";
+import Glossar from "./Routes/Glossar.svelte";
 
 const routes = {
     '/': Home,
+    "/glossar": Glossar,
     "/grammar": Grammar,
     "/grammar/declensions": Declensions,
     "/grammar/conjugations": Conjugations,
+
     "/grammar/sentence-structures": SentenceStructures,
     "/grammar/sentence-structures/pc": PC,
     "/grammar/sentence-structures/aci": ACI,
+
     "/grammar/participium": Particiupium,
     "/grammar/participium/ppp": PPP,
     "/grammar/participium/ppa": PPA,

@@ -7,6 +7,9 @@
     function goToVocab() {
         push('/vocabulary');
     }
+    function goToGlossar() {
+        push('/glossar');
+    }
     function handleKeyDown(event: KeyboardEvent) {
         if (event.key === 'Enter' || event.key === ' ') {
             event.preventDefault();
@@ -20,6 +23,8 @@
     <div class="item-list">
         <span role="button" tabindex="0" on:click={goToGrammar} on:keydown={handleKeyDown} class="grammar"> Grammatik </span>
         <span role="button" tabindex="0" on:click={goToVocab} on:keydown={handleKeyDown} class="vocabulary"> Vokabeln </span>
+        <span role="button" tabindex="0" on:click={goToGlossar} on:keydown={handleKeyDown} class="glossar"> Glossar </span>
+
     </div>
 </div>
 
@@ -58,6 +63,9 @@
     }
     span.vocabulary {
         background-color: #414a8f;
+    }
+    span.glossar {
+        background-color: #d51515;
     }
     span:hover {
         transform: scale(1.05);

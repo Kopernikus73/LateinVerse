@@ -5,7 +5,7 @@
         push('/grammar');
     }
     function goToPC(){
-        push('/grammar/sentence-structures/PC');
+        push('/grammar/sentence-structures/pc');
     }
     function goToACI(){
         push('/grammar/sentence-structures/aci');
