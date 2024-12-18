@@ -17,6 +17,7 @@
     <div class="back-button">
         <span role="button" tabindex="0" on:click={goBack} on:keydown={handleKeyDown} class="back">Back</span>
     </div>
+    <h1>Deklinationen</h1>
     <div class="category-list">
         <div class="category" id="table1">
             <h2>o - Deklination (m)</h2>
@@ -267,6 +268,15 @@
 </div>
 
 <style>
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        color: #00788f;
+        border-bottom: 2px solid #005f73;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
     .declensions {
         color: #e0e0e0;
         background: #121212;

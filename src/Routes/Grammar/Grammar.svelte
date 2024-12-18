@@ -10,6 +10,12 @@
     function goToConjugations() {
         push('/grammar/conjugations');
     }
+    function goToSentenceStructures() {
+        push('/grammar/sentence-structures');
+    }
+    function goToParticipium() {
+        push('/grammar/participium');
+    }
     function handleKeyDown(event: KeyboardEvent) {
         if (event.key === 'Enter' || event.key === ' ') {
             event.preventDefault(); // Prevent scrolling on Space
@@ -24,8 +30,10 @@
     </div>
     <h1>Grammatik</h1>
     <div class="item-list">
-        <span role="button" tabindex="0" on:click={goToDeclensions} on:keydown={handleKeyDown} class="declensions"> Deklinationen </span>
-        <span role="button" tabindex="0" on:click={goToConjugations} on:keydown={handleKeyDown} class="declensions"> Konjugationen </span>
+        <span role="button" tabindex="0" on:click={goToDeclensions} on:keydown={handleKeyDown} class="buttons"> Deklinationen </span>
+        <span role="button" tabindex="0" on:click={goToConjugations} on:keydown={handleKeyDown} class="buttons"> Konjugationen </span>
+        <span role="button" tabindex="0" on:click={goToSentenceStructures} on:keydown={handleKeyDown} class="buttons"> Satzkonstruktionen </span>
+        <span role="button" tabindex="0" on:click={goToParticipium()} on:keydown={handleKeyDown} class="buttons"> Partizip </span>
     </div>
 </div>
 
@@ -37,34 +45,33 @@
     }
 
     .item-list {
-        display: flex;
+        display: grid;
         justify-content: center;
         align-items: center;
+        grid-template-columns: repeat(2, 0.1fr);
         gap: 1rem;
-
     }
 
     span {
-        display: inline-block; /* Makes the span behave more like a button */
+        display: inline-block;
         padding: 10px 20px;
         color: #ffffff;
         font-size: 1.5rem;
-        width: 10rem;
+        width: 15rem;
         font-weight: bold;
         text-align: center;
         border-radius: 8px;
         border: #fff solid 2px;
         cursor: pointer;
-        transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
-        text-decoration: none; /* Removes underline if text is styled like a link */
+        transition: background-color 0.3s, transform 0.2s;
+        text-decoration: none;
     }
 
-    /* Hover effect for mouse users */
     span:hover {
-        transform: scale(1.05); /* Slight zoom effect */
+        transform: scale(1.05);
     }
 
-    span.declensions {
+    span.buttons {
         background-color: #2d8f3e;
     }
 
@@ -74,7 +81,7 @@
         font-size: 1rem;
     }
     span.back:hover {
-        transform: scale(1.2); /* Slight zoom effect */
+        transform: scale(1.2);
         background-color: red;
     }
     .back-button{

@@ -25,7 +25,7 @@
                 <tbody>
                 <tr>
                     <td>Infinitiv</td>
-                    <td>am - <span class="con-verb">a</span> - <span class="con-perf">v</span> - <span class="con">visse</span></td>
+                    <td>am - <span class="con-verb">a</span>- <span class="con">visse</span></td>
                 </tr>
                 <tr>
                     <td>1. Ps. Sgl.</td>
