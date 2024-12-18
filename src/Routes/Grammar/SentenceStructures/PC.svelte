@@ -40,10 +40,10 @@
                 <br/>
                 <strong id="types">Konjunktionaler Nebensatz</strong>:
                 <div id="indent1">
-                    a) temporal (Zeit): "Du selbst gabst deinem Kopf <strong class="pc">Gifte, nachdem sie gemischt wurden</strong>." [nachdem, während, als] <br/>
-                    b) kausal (Grund): "Du selbst gabst deinem Kopf <strong class="pc">Gifte, weil sie gemischt wurden</strong>." [weil, da] <br/>
-                    c) konzessiv (Wiederspruch?): "Du selbst gabst deinem Kopf <strong class="pc">Gifte, obwohl sie gemischt wurden</strong>." [obwohl] <br/>
-                    d) modal (Folge?): "Du selbst gabst deinem Kopf <strong class="pc">Gifte, indem sie gemischt wurden</strong>." [indem] <br/>
+                    a) temporal (Zeit): "Du selbst gabst deinem Kopf <strong class="pc">Gifte, nachdem sie gemischt worden waren</strong>." [nachdem, während, als] <br/>
+                    b) kausal (Grund): "Du selbst gabst deinem Kopf <strong class="pc">Gifte, weil sie gemischt worden waren</strong>." [weil, da] <br/>
+                    c) konzessiv (Wiederspruch?): "Du selbst gabst deinem Kopf <strong class="pc">Gifte, obwohl sie gemischt worden waren</strong>." [obwohl] <br/>
+                    d) modal (Folge?): "Du selbst gabst deinem Kopf <strong class="pc">Gifte, indem sie gemischt worden waren</strong>." [indem, (wodurch?)] <br/>
                 </div>
             </div>
         </div>
