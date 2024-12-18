@@ -25,7 +25,7 @@
             <div id="sentence">
                 Ipsa dabas capiti <strong class="pc">mixta venena</strong> tuo.
             </div>
-            Hier steht das Partizip (mixta) im <strong class="pc">Akkusativ Plural Neutrum</strong> und das Substantiv (venena). <br/>
+            Hier steht das Partizip (mixta) im <strong class="pc">Akkusativ Plural Neutrum</strong> und das Substantiv (venena) ebenso, da die Beiden Wörter KNG (Kasus Numerus Genus) kongruent sind. <br/>
             Zudem liegt das Partizip hier als <a href=" " use:link={"/grammar/participium/ppp"}>PPP</a> vor,  wodurch eine Vorzeitigkeit bewirkt wird (Der Satz passt sich dem Partizip an).
         </div>
         <div class="types">
