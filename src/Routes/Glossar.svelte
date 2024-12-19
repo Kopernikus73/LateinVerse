@@ -2,45 +2,50 @@
     import { push } from 'svelte-spa-router';
 
     let inputText = "";
-    let glossar = [
+    const glossar = [
         {
             name: "KNG Kongruenz",
             id: 0,
             description: "Die KNG Kongruenz beschreibt das Gleichseien des Kasus (K) Nummerus (N) und Genus (G) zweier Wörter.",
             example: '"Forum" steht im Nom. Sgl. n. Ein Wort, das KNG kongruent dazu steht müsste also ebenfalls im Nom. Sgl. n. stehen. Z.B. "magnum" (von magnus)',
-            height: 200
         },
         {
             name: "Kasus",
             id: 1,
             description: "Der Kasus (Fall) ist eine der drei Deklinationskategorien. Jedes Substantiv, Adjektiv, Partizip, Pronomen, usw. hat einen zugewiesenen Kasus. Dieser ist am der Endung des Wortes abzulesen",
             example:  "Servus -> Nominativ (Die Endung '-us' deutet hier auf den Nominativ hin)",
-            height: 200
         }
     ];
 
-    function search() {
-        for(let i=0;glossar;i++) {
-            if (glossar[i].name.toLowerCase().includes(inputText.toLowerCase())) {
-                scrollToPosition(glossar[i].height)
-                break
+    function calcScrollHeight(id: number) {
+        for (let i=0; i<(glossar.length + (3 - (glossar.length % 3)))/3;i++) {
+            for(let k=0;k<=3; k++) {
+                if (glossar[i*3 + k].id === id){
+                    window.scrollTo({ top: 420 + (i)*440, behavior: 'smooth' });
+                }
             }
         }
     }
 
+    function search() {
+        for (let i = 0; glossar; i++) {
+            if (glossar[i].name.toLowerCase().includes(inputText.toLowerCase())) {
+                if(inputText.toLowerCase() !== '') {
+                    calcScrollHeight(glossar[i].id);
+                    break;
+                }
+            }
+        }
+    }
 
     function goBack() {
         push('/');
     }
 
-    function scrollToPosition(height: number) {
-        window.scrollTo(100, height);
-    }
-
     function handleKeyDown(event: KeyboardEvent) {
         if (event.key === 'Enter' || event.key === ' ') {
             event.preventDefault();
-            goBack();
+            search();
         }
     }
 </script>
@@ -56,15 +61,15 @@
                 bind:value={inputText}
                 placeholder="Suchen"
         />
-        <span role="button" tabindex="0" on:click={search()} on:keydown={handleKeyDown}></span>
+        <span role="button" tabindex="0" on:click={search} on:keydown={handleKeyDown}></span>
     </div>
     <div class="word-list">
         {#each glossar as item (item.id)}
-        <span class="glossar-item">
-            <strong id="name">{item.name}</strong><br>
-            <div class="description"><em>{item.description}</em><br></div>
-            <div class="example"><u>Beispiel:</u>  <br> {item.example}</div>
-        </span>
+                <span class="glossar-item">
+                    <strong class="name">{item.name}</strong><br>
+                    <div class="description"><em>{item.description}</em><br></div>
+                    <div class="example"><u>Beispiel:</u>  <br> {item.example}</div>
+                </span>
         {/each}
     </div>
 </div>
@@ -90,6 +95,7 @@
             border: 2px solid #fff;
             cursor: pointer;
             text-decoration: none;
+            background: #ffab40;
         }
         margin-bottom: 1rem;
     }
@@ -149,6 +155,7 @@
         align-items: center;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
+        margin-bottom: 530px;
     }
     .word-list span{
         display: block;
@@ -167,7 +174,7 @@
     .example{
         margin-top: 0.5rem;
     }
-    #name{
+    .name{
         align-self: center;
         border-bottom: 3px solid #fff;
         width: 100%;
