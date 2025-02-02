@@ -1,9 +1,12 @@
 <script lang="ts">
+
 </script>
 
+
 <div class="main">
-    <h1>Partizip Futur Aktiv (PFA)</h1>
+    <h1>Wichtige Persönlichkeiten der Geschichte</h1>
 </div>
+
 
 <style>
     h1 {

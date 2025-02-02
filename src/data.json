@@ -1,0 +1,556 @@
+{
+  "x001": {
+    "name": "Deklinationsübungen",
+    "casus": [
+      {
+        "case": "Nominativ",
+        "numerus": "Singular",
+        "words": {
+          "o-m": ["servus", "populus"],
+          "o-e": ["puer", "ager"],
+          "o-n": ["forum", "templum"],
+          "a-f": ["serva", "basilica"],
+          "3-m": ["senator", "mercator"],
+          "3-f": ["mater", "soror"],
+          "3-n": ["nomen", "flumen"]
+        }
+      },
+      {
+        "case": "Nominativ",
+        "numerus": "Plural",
+        "words": {
+          "o-m": ["servi", "populi"],
+          "o-e": ["pueri", "agri"],
+          "o-n": ["fora", "templa"],
+          "a-f": ["servae", "basilicae"],
+          "3-m": ["senatores", "mercatores"],
+          "3-f": ["matres", "sorores"],
+          "3-n": ["nomina", "flumina"]
+        }
+      },
+      {
+        "case": "Genitiv",
+        "numerus": "Singular",
+        "words": {
+          "o-m": ["servi", "populi"],
+          "o-e": ["pueri", "agri"],
+          "o-n": ["fori", "templi"],
+          "a-f": ["servae", "basilicae"],
+          "3-m": ["senatoris", "mercatoris"],
+          "3-f": ["matris", "sororis"],
+          "3-n": ["nominis", "fluminis"]
+        }
+      },
+      {
+        "case": "Genitiv",
+        "numerus": "Plural",
+        "words": {
+          "o-m": ["servorum", "populorum"],
+          "o-e": ["puerorum", "agrorum"],
+          "o-n": ["fororum", "templorum"],
+          "a-f": ["servarum", "basilicarum"],
+          "3-m": ["senatorum", "mercatorum"],
+          "3-f": ["matrum", "sororum"],
+          "3-n": ["nominum", "fluminum"]
+        }
+      },
+      {
+        "case": "Dativ",
+        "numerus": "Singular",
+        "words": {
+          "o-m": ["servo", "populo"],
+          "o-e": ["puero", "agro"],
+          "o-n": ["foro", "templum"],
+          "a-f": ["servae", "basilicae"],
+          "3-m": ["senatori", "mercatori"],
+          "3-f": ["matri", "sorori"],
+          "3-n": ["nomini", "flumini"]
+        }
+      },
+      {
+        "case": "Dativ",
+        "numerus": "Plural",
+        "words": {
+          "o-m": ["servis", "populis"],
+          "o-e": ["pueris", "agris"],
+          "o-n": ["foris", "templis"],
+          "a-f": ["servis", "basilicis"],
+          "3-m": ["senatoribus", "mercatoribus"],
+          "3-f": ["matribus", "sororibus"],
+          "3-n": ["nominibus", "fluminibus"]
+        }
+      },
+      {
+        "case": "Akkusativ",
+        "numerus": "Singular",
+        "words": {
+          "o-m": ["servum", "populum"],
+          "o-e": ["puerum", "agrum"],
+          "o-n": ["forum", "templum"],
+          "a-f": ["servam", "basilicam"],
+          "3-m": ["senatorem", "mercatorem"],
+          "3-f": ["matrem", "sororem"],
+          "3-n": ["nomen", "flumen"]
+        }
+      },
+      {
+        "case": "Akkusativ",
+        "numerus": "Plural",
+        "words": {
+          "o-m": ["servos", "populos"],
+          "o-e": ["pueros", "agros"],
+          "o-n": ["fora", "templa"],
+          "a-f": ["servas", "basilicas"],
+          "3-m": ["senatores", "mercatores"],
+          "3-f": ["matres", "sorores"],
+          "3-n": ["nomina", "flumina"]
+        }
+      },
+      {
+        "case": "Ablativ",
+        "numerus": "Singular",
+        "words": {
+          "o-m": ["servo", "populo"],
+          "o-e": ["puero", "agro"],
+          "o-n": ["foro", "templo"],
+          "a-f": ["serva", "basilica"],
+          "3-m": ["senatore", "mercatore"],
+          "3-f": ["matre", "sorore"],
+          "3-n": ["nomine", "flumine"]
+        }
+      },
+      {
+        "case": "Ablativ",
+        "numerus": "Plural",
+        "words": {
+          "o-m": ["servis", "populis"],
+          "o-e": ["pueris", "agris"],
+          "o-n": ["foris", "templis"],
+          "a-f": ["servis", "basilicis"],
+          "3-m": ["senatoribus", "mercatoribus"],
+          "3-f": ["matribus", "sororibus"],
+          "3-n": ["nominibus", "fluminibus"]
+        }
+      }
+    ]
+  },
+  "x002": {
+    "name": "Zeitstrahl",
+    "events": [
+      {
+        "date" : -753,
+        "title": "Gründung Roms",
+        "description": "Der Legende nach gründete Romulus, der seinen Bruder Remus ermordete, 753 v.Chr. Rom"
+      },
+      {
+        "date": -509,
+        "title": "Sturz der römischen Monarchie und Gründung der Republik",
+        "description": "Nach dem Sturz des letzten etruskischen Königs Tarquinius Superbus wurde die Römische Republik gegründet. Dies markierte den Beginn einer neuen Regierungsform, die auf Konsuln, Senat und Volksversammlungen basierte."
+      },
+      {
+        "date": -450,
+        "title": "Verabschiedung der Zwölftafelgesetze",
+        "description": "Die Zwölftafelgesetze waren die erste schriftliche Kodifizierung des römischen Rechts und bildeten die Grundlage für das römische Rechtssystem."
+      },
+      {
+        "date": -264,
+        "title": "Beginn der Punischen Kriege",
+        "description": "Die Punischen Kriege waren eine Reihe von drei Kriegen zwischen Rom und Karthago, die um die Vorherrschaft im westlichen Mittelmeer kämpften. Der Erste Punische Krieg begann 264 v.Chr."
+      },
+      {
+        "date": -218,
+        "title": "Hannibals Alpenüberquerung",
+        "description": "Während des Zweiten Punischen Krieges führte der karthagische General Hannibal seine Armee, einschließlich Kriegselefanten, über die Alpen, um Rom anzugreifen."
+      },
+      {
+        "date": -146,
+        "title": "Zerstörung Karthagos und Korinths",
+        "description": "Rom zerstörte Karthago vollständig und beendete damit die Punischen Kriege. Im selben Jahr wurde auch Korinth zerstört, was die römische Vorherrschaft in Griechenland festigte."
+      },
+      {
+        "date": -44,
+        "title": "Ermordung Julius Caesars",
+        "description": "Julius Caesar, der sich zum Diktator auf Lebenszeit hatte ernennen lassen, wurde an den Iden des März (15. März) von einer Gruppe von Senatoren ermordet, darunter auch Brutus und Cassius."
+      },
+      {
+        "date": -27,
+        "title": "Beginn des Prinzipats unter Augustus",
+        "description": "Octavian, später bekannt als Augustus, wurde der erste römische Kaiser und begründete das Prinzipat, eine neue Regierungsform, die die Republik ablöste und das Römische Reich einleitete."
+      },
+      {
+        "date": 14,
+        "title": "Tod des Augustus",
+        "description": "Augustus starb nach einer langen Regierungszeit, in der er das Römische Reich stabilisierte und ausbaute. Sein Tod markierte den Beginn der julisch-claudischen Dynastie."
+      },
+      {
+        "date": 64,
+        "title": "Großer Brand von Rom",
+        "description": "Ein verheerender Brand zerstörte große Teile Roms. Kaiser Nero nutzte die Gelegenheit, um die Christen als Sündenböcke zu verfolgen und seinen neuen Palast, die Domus Aurea, zu errichten."
+      },
+      {
+        "date": 79,
+        "title": "Ausbruch des Vesuvs",
+        "description": "Der Ausbruch des Vesuvs zerstörte die Städte Pompeji und Herculaneum. Die Städte wurden unter Asche und Lava begraben und blieben bis zu ihrer Wiederentdeckung im 18. Jahrhundert erhalten."
+      },
+      {
+        "date": 96,
+        "title": "Beginn der Adoptivkaiser",
+        "description": "Nach dem Tod Domitians begann die Ära der Adoptivkaiser, in der die Kaiser ihre Nachfolger aufgrund von Verdiensten und Fähigkeiten auswählten. Diese Periode gilt als eine der stabilsten und erfolgreichsten des Römischen Reiches."
+      },
+      {
+        "date": 180,
+        "title": "Tod von Mark Aurel",
+        "description": "Mark Aurel, der letzte der sogenannten „fünf guten Kaiser“, starb. Sein Tod markierte das Ende der Pax Romana und den Beginn einer Zeit der Instabilität und des Niedergangs."
+      },
+      {
+        "date": 212,
+        "title": "Constitutio Antoniniana",
+        "description": "Kaiser Caracalla verlieh mit der Constitutio Antoniniana allen freien Bewohnern des Römischen Reiches das römische Bürgerrecht."
+      },
+      {
+        "date": 284,
+        "title": "Beginn der Herrschaft Diokletians",
+        "description": "Diokletian wurde Kaiser und führte umfassende Reformen durch, darunter die Einführung der Tetrarchie, um das riesige Reich besser zu verwalten."
+      },
+      {
+        "date": 313,
+        "title": "Mailänder Edikt",
+        "description": "Kaiser Konstantin der Große und Licinius erließen das Mailänder Edikt, das die Religionsfreiheit im Römischen Reich gewährte und das Christentum legalisierte."
+      },
+      {
+        "date": 330,
+        "title": "Gründung Konstantinopels",
+        "description": "Konstantin der Große machte Byzanz zur neuen Hauptstadt des Römischen Reiches und nannte sie Konstantinopel. Dies markierte den Beginn des Byzantinischen Reiches."
+      },
+      {
+        "date": 395,
+        "title": "Teilung des Römischen Reiches",
+        "description": "Nach dem Tod von Theodosius I. wurde das Römische Reich in das Weströmische Reich und das Oströmische Reich (Byzanz) aufgeteilt."
+      },
+      {
+        "date": 410,
+        "title": "Plünderung Roms durch die Westgoten",
+        "description": "Die Westgoten unter Alarich I. plünderten Rom, was als ein symbolischer Schlag gegen das Weströmische Reich angesehen wurde."
+      },
+      {
+        "date": 476,
+        "title": "Untergang des Weströmischen Reiches",
+        "description": "Der letzte weströmische Kaiser Romulus Augustulus wurde von dem germanischen Heerführer Odoaker abgesetzt. Dieses Ereignis markiert traditionell das Ende des Weströmischen Reiches."
+      },
+      {
+        "date": 1453,
+        "title": "Fall von Konstantinopel",
+        "description": "Die Eroberung Konstantinopels durch die Osmanen unter Mehmed II. markierte das endgültige Ende des Oströmischen (Byzantinischen) Reiches."
+      }
+    ]
+  },
+  "x003": {
+    "name": "Konjugationen",
+    "conjugations": [
+      {
+        "name": "A - Konjugation",
+        "word_root": "am",
+        "active": [
+          {
+            "name": "Futur II",
+            "list": [
+              {"particle": "a", "tempus_particle": "t", "ending": "urum esse"},
+              {"particle": "a", "tempus_particle": "v", "ending": "ero"},
+              {"particle": "a", "tempus_particle": "v", "ending": "eris"},
+              {"particle": "a", "tempus_particle": "v", "ending": "erit"},
+              {"particle": "a", "tempus_particle": "v", "ending": "erimus"},
+              {"particle": "a", "tempus_particle": "v", "ending": "eritis"},
+              {"particle": "a", "tempus_particle": "v", "ending": "erint"}
+            ]
+          },
+          {
+            "name": "Futur I",
+            "list": [
+              {"particle": "a", "tempus_particle": "t", "ending": "urum esse"},
+              {"particle": "a", "tempus_particle": "b", "ending": "o"},
+              {"particle": "a", "tempus_particle": "bi", "ending": "s"},
+              {"particle": "a", "tempus_particle": "bi", "ending": "t"},
+              {"particle": "a", "tempus_particle": "bi", "ending": "mus"},
+              {"particle": "a", "tempus_particle": "bi", "ending": "tis"},
+              {"particle": "a", "tempus_particle": "bu", "ending": "nt"}
+            ]
+          },
+          {
+            "name": "Präsens",
+            "list": [
+              {"particle": "a", "tempus_particle": "", "ending": "re"},
+              {"particle": "", "tempus_particle": "", "ending": "o"},
+              {"particle": "a", "tempus_particle": "", "ending": "s"},
+              {"particle": "a", "tempus_particle": "", "ending": "t"},
+              {"particle": "a", "tempus_particle": "", "ending": "mus"},
+              {"particle": "a", "tempus_particle": "", "ending": "tis"},
+              {"particle": "a", "tempus_particle": "", "ending": "nt"}
+            ]
+          },
+          {
+            "name": "Imperfekt",
+            "list": [
+              {"particle": "a", "tempus_particle": "v", "ending": "isse"},
+              {"particle": "a", "tempus_particle": "ba", "ending": "m"},
+              {"particle": "a", "tempus_particle": "ba", "ending": "s"},
+              {"particle": "a", "tempus_particle": "ba", "ending": "t"},
+              {"particle": "a", "tempus_particle": "ba", "ending": "mus"},
+              {"particle": "a", "tempus_particle": "ba", "ending": "tis"},
+              {"particle": "a", "tempus_particle": "ba", "ending": "nt"}
+            ]
+          },
+          {
+            "name": "Perfekt",
+            "list": [
+              {"particle": "a", "tempus_particle": "v", "ending": "isse"},
+              {"particle": "a", "tempus_particle": "v", "ending": "i"},
+              {"particle": "a", "tempus_particle": "v", "ending": "isti"},
+              {"particle": "a", "tempus_particle": "v", "ending": "it"},
+              {"particle": "a", "tempus_particle": "v", "ending": "imus"},
+              {"particle": "a", "tempus_particle": "v", "ending": "istis"},
+              {"particle": "a", "tempus_particle": "v", "ending": "erunt"}
+            ]
+          },
+          {
+            "name": "Plusquamperfekt",
+            "list": [
+              {"particle": "a", "tempus_particle": "v", "ending": "isse"},
+              {"particle": "a", "tempus_particle": "v", "ending": "eram"},
+              {"particle": "a", "tempus_particle": "v", "ending": "eras"},
+              {"particle": "a", "tempus_particle": "v", "ending": "erat"},
+              {"particle": "a", "tempus_particle": "v", "ending": "eramus"},
+              {"particle": "a", "tempus_particle": "v", "ending": "eratis"},
+              {"particle": "a", "tempus_particle": "v", "ending": "erunt"}
+            ]
+          }
+        ],
+        "passive": [
+          {
+            "name": "Futur II",
+            "list": [
+              {"particle": "a", "tempus_particle": "t", "ending": "um esse"},
+              {"particle": "a", "tempus_particle": "t", "ending": "us ero"},
+              {"particle": "a", "tempus_particle": "t", "ending": "us eris"},
+              {"particle": "a", "tempus_particle": "t", "ending": "us erit"},
+              {"particle": "a", "tempus_particle": "t", "ending": "i erimus"},
+              {"particle": "a", "tempus_particle": "t", "ending": "i eritis"},
+              {"particle": "a", "tempus_particle": "t", "ending": "i erint"}
+            ]
+          },
+          {
+            "name": "Futur I",
+            "list": [
+              {"particle": "a", "tempus_particle": "t", "ending": "um esse"},
+              {"particle": "a", "tempus_particle": "b", "ending": "or"},
+              {"particle": "a", "tempus_particle": "be", "ending": "ris"},
+              {"particle": "a", "tempus_particle": "bi", "ending": "tur"},
+              {"particle": "a", "tempus_particle": "bi", "ending": "mur"},
+              {"particle": "a", "tempus_particle": "bi", "ending": "mini"},
+              {"particle": "a", "tempus_particle": "bu", "ending": "ntur"}
+            ]
+          },
+          {
+            "name": "Präsens",
+            "list": [
+              {"particle": "a", "tempus_particle": "", "ending": "ri"},
+              {"particle": "", "tempus_particle": "", "ending": "or"},
+              {"particle": "a", "tempus_particle": "", "ending": "ris"},
+              {"particle": "a", "tempus_particle": "", "ending": "tur"},
+              {"particle": "a", "tempus_particle": "", "ending": "mur"},
+              {"particle": "a", "tempus_particle": "", "ending": "mini"},
+              {"particle": "a", "tempus_particle": "", "ending": "ntur"}
+            ]
+          },
+          {
+            "name": "Imperfekt",
+            "list": [
+              {"particle": "a", "tempus_particle": "t", "ending": "um iri"},
+              {"particle": "a", "tempus_particle": "ba", "ending": "r"},
+              {"particle": "a", "tempus_particle": "ba", "ending": "ris"},
+              {"particle": "a", "tempus_particle": "ba", "ending": "tur"},
+              {"particle": "a", "tempus_particle": "ba", "ending": "mur"},
+              {"particle": "a", "tempus_particle": "ba", "ending": "mini"},
+              {"particle": "a", "tempus_particle": "ba", "ending": "ntur"}
+            ]
+          },
+          {
+            "name": "Perfekt",
+            "list": [
+              {"particle": "a", "tempus_particle": "t", "ending": "um iri"},
+              {"particle": "a", "tempus_particle": "t", "ending": "us sum"},
+              {"particle": "a", "tempus_particle": "t", "ending": "us es"},
+              {"particle": "a", "tempus_particle": "t", "ending": "us est"},
+              {"particle": "a", "tempus_particle": "t", "ending": "i sumus"},
+              {"particle": "a", "tempus_particle": "t", "ending": "i estis"},
+              {"particle": "a", "tempus_particle": "t", "ending": "i sunt"}
+            ]
+          },
+          {
+            "name": "Plusquamperfekt",
+            "list": [
+              {"particle": "a", "tempus_particle": "t", "ending": "um iri"},
+              {"particle": "a", "tempus_particle": "t", "ending": "us eram"},
+              {"particle": "a", "tempus_particle": "t", "ending": "us eras"},
+              {"particle": "a", "tempus_particle": "t", "ending": "us erat"},
+              {"particle": "a", "tempus_particle": "t", "ending": "i eramus"},
+              {"particle": "a", "tempus_particle": "t", "ending": "i eratis"},
+              {"particle": "a", "tempus_particle": "t", "ending": "i erunt"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "E - Konjugation",
+        "word_root": "mon",
+        "active": [
+          {
+            "name": "Futur II",
+            "list": [
+              {"particle": "i", "tempus_particle": "t", "ending": "urum esse"},
+              {"particle": "", "tempus_particle": "u", "ending": "ero"},
+              {"particle": "", "tempus_particle": "u", "ending": "eris"},
+              {"particle": "", "tempus_particle": "u", "ending": "erit"},
+              {"particle": "", "tempus_particle": "u", "ending": "erimus"},
+              {"particle": "", "tempus_particle": "u", "ending": "eritis"},
+              {"particle": "", "tempus_particle": "u", "ending": "erint"}
+            ]
+          },
+          {
+            "name": "Futur I",
+            "list": [
+              {"particle": "i", "tempus_particle": "t", "ending": "urum"},
+              {"particle": "e", "tempus_particle": "b", "ending": "o"},
+              {"particle": "e", "tempus_particle": "bi", "ending": "s"},
+              {"particle": "e", "tempus_particle": "bi", "ending": "t"},
+              {"particle": "e", "tempus_particle": "bi", "ending": "mus"},
+              {"particle": "e", "tempus_particle": "bi", "ending": "tis"},
+              {"particle": "e", "tempus_particle": "bu", "ending": "nt"}
+            ]
+          },
+          {
+            "name": "Präsens",
+            "list": [
+              {"particle": "e", "tempus_particle": "", "ending": "re"},
+              {"particle": "e", "tempus_particle": "", "ending": "o"},
+              {"particle": "e", "tempus_particle": "", "ending": "s"},
+              {"particle": "e", "tempus_particle": "", "ending": "t"},
+              {"particle": "e", "tempus_particle": "", "ending": "mus"},
+              {"particle": "e", "tempus_particle": "", "ending": "tis"},
+              {"particle": "e", "tempus_particle": "", "ending": "nt"}
+            ]
+          },
+          {
+            "name": "Imperfekt",
+            "list": [
+              {"particle": "", "tempus_particle": "", "ending": ""},
+              {"particle": "e", "tempus_particle": "ba", "ending": "m"},
+              {"particle": "e", "tempus_particle": "ba", "ending": "s"},
+              {"particle": "e", "tempus_particle": "ba", "ending": "t"},
+              {"particle": "e", "tempus_particle": "ba", "ending": "mus"},
+              {"particle": "e", "tempus_particle": "ba", "ending": "tis"},
+              {"particle": "e", "tempus_particle": "ba", "ending": "nt"}
+            ]
+          },
+          {
+            "name": "Perfekt",
+            "list": [
+              {"particle": "", "tempus_particle": "u", "ending": "isse"},
+              {"particle": "", "tempus_particle": "u", "ending": "i"},
+              {"particle": "", "tempus_particle": "u", "ending": "isti"},
+              {"particle": "", "tempus_particle": "u", "ending": "it"},
+              {"particle": "", "tempus_particle": "u", "ending": "imus"},
+              {"particle": "", "tempus_particle": "u", "ending": "istis"},
+              {"particle": "", "tempus_particle": "u", "ending": "erunt"}
+            ]
+          },
+          {
+            "name": "Plusquamperfekt",
+            "list": [
+              {"particle": "", "tempus_particle": "u", "ending": "isse"},
+              {"particle": "", "tempus_particle": "u", "ending": "eram"},
+              {"particle": "", "tempus_particle": "u", "ending": "eras"},
+              {"particle": "", "tempus_particle": "u", "ending": "erat"},
+              {"particle": "", "tempus_particle": "u", "ending": "eramus"},
+              {"particle": "", "tempus_particle": "u", "ending": "eratis"},
+              {"particle": "", "tempus_particle": "u", "ending": "erant"}
+            ]
+          }
+        ],
+        "passive": [
+          {
+            "name": "Futur II",
+            "list": [
+              {"particle": "i", "tempus_particle": "t", "ending": "um iri"},
+              {"particle": "i", "tempus_particle": "t", "ending": "us ero"},
+              {"particle": "i", "tempus_particle": "t", "ending": "us eris"},
+              {"particle": "i", "tempus_particle": "t", "ending": "us erit"},
+              {"particle": "i", "tempus_particle": "t", "ending": "i erimus"},
+              {"particle": "i", "tempus_particle": "t", "ending": "i eritis"},
+              {"particle": "i", "tempus_particle": "t", "ending": "i erunt"}
+            ]
+          },
+          {
+            "name": "Futur I",
+            "list": [
+              {"particle": "i", "tempus_particle": "t", "ending": "um iri"},
+              {"particle": "e", "tempus_particle": "b", "ending": "or"},
+              {"particle": "e", "tempus_particle": "be", "ending": "ris"},
+              {"particle": "e", "tempus_particle": "bi", "ending": "tur"},
+              {"particle": "e", "tempus_particle": "bi", "ending": "mur"},
+              {"particle": "e", "tempus_particle": "bi", "ending": "mini"},
+              {"particle": "e", "tempus_particle": "bu", "ending": "ntur"}
+            ]
+          },
+          {
+            "name": "Präsens",
+            "list": [
+              {"particle": "e", "tempus_particle": "", "ending": "ri"},
+              {"particle": "e", "tempus_particle": "", "ending": "or"},
+              {"particle": "e", "tempus_particle": "", "ending": "ris"},
+              {"particle": "e", "tempus_particle": "", "ending": "tur"},
+              {"particle": "e", "tempus_particle": "", "ending": "mur"},
+              {"particle": "e", "tempus_particle": "", "ending": "mini"},
+              {"particle": "e", "tempus_particle": "", "ending": "ntur"}
+            ]
+          },
+          {
+            "name": "Imperfekt",
+            "list": [
+              {"particle": "e", "tempus_particle": "", "ending": ""},
+              {"particle": "e", "tempus_particle": "ba", "ending": "r"},
+              {"particle": "e", "tempus_particle": "ba", "ending": "ris"},
+              {"particle": "e", "tempus_particle": "ba", "ending": "tur"},
+              {"particle": "e", "tempus_particle": "ba", "ending": "mur"},
+              {"particle": "e", "tempus_particle": "ba", "ending": "mini"},
+              {"particle": "e", "tempus_particle": "ba", "ending": "ntur"}
+            ]
+          },
+          {
+            "name": "Perfekt",
+            "list": [
+              {"particle": "e", "tempus_particle": "", "ending": ""},
+              {"particle": "i", "tempus_particle": "t", "ending": "us sum"},
+              {"particle": "i", "tempus_particle": "t", "ending": "us es"},
+              {"particle": "i", "tempus_particle": "t", "ending": "us est"},
+              {"particle": "i", "tempus_particle": "t", "ending": "i sumus"},
+              {"particle": "i", "tempus_particle": "t", "ending": "i estis"},
+              {"particle": "i", "tempus_particle": "t", "ending": "i sunt"}
+            ]
+          },
+          {
+            "name": "Plusquamperfekt",
+            "list": [
+              {"particle": "e", "tempus_particle": "", "ending": ""},
+              {"particle": "i", "tempus_particle": "t", "ending": "us eram"},
+              {"particle": "i", "tempus_particle": "t", "ending": "us eras"},
+              {"particle": "i", "tempus_particle": "t", "ending": "us erat"},
+              {"particle": "i", "tempus_particle": "t", "ending": "i eramus"},
+              {"particle": "i", "tempus_particle": "t", "ending": "i eratis"},
+              {"particle": "i", "tempus_particle": "t", "ending": "i erant"}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

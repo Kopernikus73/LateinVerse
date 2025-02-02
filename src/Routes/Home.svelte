@@ -10,6 +10,9 @@
     function goToGlossar() {
         push('/glossar');
     }
+    function goToHistory() {
+        push('/history');
+    }
     function handleKeyDown(event: KeyboardEvent) {
         if (event.key === 'Enter' || event.key === ' ') {
             event.preventDefault();
@@ -24,12 +27,17 @@
         <span role="button" tabindex="0" on:click={goToGrammar} on:keydown={handleKeyDown} class="grammar"> Grammatik </span>
         <span role="button" tabindex="0" on:click={goToVocab} on:keydown={handleKeyDown} class="vocabulary"> Vokabeln </span>
         <span role="button" tabindex="0" on:click={goToGlossar} on:keydown={handleKeyDown} class="glossar"> Glossar </span>
+        <span role="button" tabindex="0" on:click={goToHistory} on:keydown={handleKeyDown} class="history"> Geschichte </span>
 
     </div>
 </div>
 
 
 <style>
+    img{
+        margin-bottom: -0.2rem;
+    }
+
     h1{
         text-align: center;
         font-size: 7rem;
@@ -48,7 +56,7 @@
         padding: 10px 20px;
         color: #ffffff;
         font-size: 1.5rem;
-        width: 15rem;
+        width: 17rem;
         font-weight: bold;
         text-align: center;
         border-radius: 8px;
@@ -58,6 +66,7 @@
         text-decoration: none;
     }
 
+    /* Farben */
     span.grammar {
         background-color: #2d8f3e;
     }
@@ -67,6 +76,10 @@
     span.glossar {
         background-color: #d51515;
     }
+    span.history {
+        background-color: #9b307f;
+    }
+
     span:hover {
         transform: scale(1.05);
     }

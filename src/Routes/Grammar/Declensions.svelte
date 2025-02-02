@@ -1,22 +1,7 @@
 <script lang="ts">
-    import { push } from 'svelte-spa-router';
-
-    function goBack() {
-        push('/grammar');
-    }
-
-    function handleKeyDown(event: KeyboardEvent) {
-        if (event.key === 'Enter' || event.key === ' ') {
-            event.preventDefault();
-            goBack();
-        }
-    }
 </script>
 
 <div class="declensions">
-    <div class="back-button">
-        <span role="button" tabindex="0" on:click={goBack} on:keydown={handleKeyDown} class="back">Back</span>
-    </div>
     <h1>Deklinationen</h1>
     <div class="category-list">
         <div class="category" id="table1">
@@ -279,13 +264,11 @@
 
     .declensions {
         color: #e0e0e0;
-        background: #121212;
         padding-left: 2rem;
         padding-right: 2rem;
         border-radius: 12px;
         max-width: 100%;
         margin: auto;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         overflow-y: auto;
     }
 
@@ -479,35 +462,6 @@
         th, td {
             padding: 5px;
         }
-    }
-
-    span.back{
-        background-color: darkred;
-        width: 3.5rem;
-        font-size: 1rem;
-        display: inline-block;
-        padding: 10px 20px;
-        margin-bottom: 0.5rem;
-        color: #ffffff;
-        font-weight: bold;
-        text-align: center;
-        border-radius: 8px;
-        border: #fff solid 2px;
-        cursor: pointer;
-        transition: background-color 0.3s, transform 0.2s;
-        text-decoration: none;
-    }
-    span.back:hover {
-        transform: scale(1.2);
-        background-color: red;
-        cursor: pointer;
-    }
-    .back-button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 0.5rem;
-        padding-bottom: -1cm;
     }
 </style>
 

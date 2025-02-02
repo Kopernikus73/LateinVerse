@@ -1,34 +1,30 @@
 <script lang="ts">
     import { push } from 'svelte-spa-router';
 
-    function goToPPP() {
-        push('/grammar/participium/ppp');
+    function goToTimeBeam(){
+        push('/history/time-beam');
     }
-    function goToPPA() {
-        push('/grammar/participium/ppa');
+    function goToPeople(){
+        push('/history/people');
     }
-    function goToPFA() {
-        push('/grammar/participium/pfa');
-    }
+
     function handleKeyDown(event: KeyboardEvent) {
         if (event.key === 'Enter' || event.key === ' ') {
             event.preventDefault();
-            goBack();
         }
     }
 </script>
 
 <div class="main">
-    <h1>Partizip</h1>
+    <h1>Geschichte</h1>
     <div class="item-list">
-        <span role="button" tabindex="0" on:click={goToPPP} on:keydown={handleKeyDown} class="buttons"> PPP </span>
-        <span role="button" tabindex="0" on:click={goToPPA} on:keydown={handleKeyDown} class="buttons"> PPA </span>
-        <span role="button" tabindex="0" on:click={goToPFA} on:keydown={handleKeyDown} class="buttons"> PFA </span>
+        <span role="button" tabindex="0" on:click={goToTimeBeam} on:keydown={handleKeyDown} class="buttons"> Zeitstrahl </span>
+        <span role="button" tabindex="0" on:click={goToPeople} on:keydown={handleKeyDown} class="buttons"> Persönlichkeiten </span>
     </div>
 </div>
 
 <style>
-    h1 {
+    h1{
         text-align: center;
         padding: 0.5rem;
         font-size: 7rem;
@@ -40,13 +36,6 @@
         align-items: center;
         grid-template-columns: repeat(2, 0.1fr);
         gap: 1rem;
-    }
-    span:hover {
-        transform: scale(1.05);
-    }
-
-    span.buttons {
-        background-color: #2d8f3e;
     }
 
     span {
@@ -62,5 +51,13 @@
         cursor: pointer;
         transition: background-color 0.3s, transform 0.2s;
         text-decoration: none;
+    }
+
+    span:hover {
+        transform: scale(1.05);
+    }
+
+    span.buttons {
+        background-color: #9b307f;
     }
 </style>

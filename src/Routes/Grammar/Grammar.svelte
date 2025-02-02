@@ -1,9 +1,6 @@
 <script lang="ts">
     import { push } from 'svelte-spa-router';
 
-    function goBack() {
-        push('/');
-    }
     function goToDeclensions() {
         push('/grammar/declensions');
     }
@@ -16,24 +13,29 @@
     function goToParticipium() {
         push('/grammar/participium');
     }
+    function goToPronouns() {
+        push('/grammar/pronouns');
+    }
+    function goToWords() {
+        push('/grammar/words');
+    }
+
     function handleKeyDown(event: KeyboardEvent) {
         if (event.key === 'Enter' || event.key === ' ') {
             event.preventDefault(); // Prevent scrolling on Space
-            goBack();
         }
     }
 </script>
 
 <div class="grammar">
-    <div class="back-button">
-        <span role="button" tabindex="0" on:click={goBack} on:keydown={handleKeyDown} class="back">Back</span>
-    </div>
     <h1>Grammatik</h1>
     <div class="item-list">
         <span role="button" tabindex="0" on:click={goToDeclensions} on:keydown={handleKeyDown} class="buttons"> Deklinationen </span>
         <span role="button" tabindex="0" on:click={goToConjugations} on:keydown={handleKeyDown} class="buttons"> Konjugationen </span>
         <span role="button" tabindex="0" on:click={goToSentenceStructures} on:keydown={handleKeyDown} class="buttons"> Satzkonstruktionen </span>
-        <span role="button" tabindex="0" on:click={goToParticipium()} on:keydown={handleKeyDown} class="buttons"> Partizip </span>
+        <span role="button" tabindex="0" on:click={goToParticipium} on:keydown={handleKeyDown} class="buttons"> Partizip </span>
+        <span role="button" tabindex="0" on:click={goToPronouns} on:keydown={handleKeyDown} class="buttons"> Pronomen </span>
+        <!--<span role="button" tabindex="0" on:click={goToWords} on:keydown={handleKeyDown} class="buttons"> Wortarten </span>-->
     </div>
 </div>
 
@@ -57,7 +59,7 @@
         padding: 10px 20px;
         color: #ffffff;
         font-size: 1.5rem;
-        width: 15rem;
+        width: 17rem;
         font-weight: bold;
         text-align: center;
         border-radius: 8px;
@@ -73,22 +75,5 @@
 
     span.buttons {
         background-color: #2d8f3e;
-    }
-
-    span.back{
-        background-color: darkred;
-        width: 3.5rem;
-        font-size: 1rem;
-    }
-    span.back:hover {
-        transform: scale(1.2);
-        background-color: red;
-    }
-    .back-button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 0.5rem;
-        padding-bottom: -1cm;
     }
 </style>

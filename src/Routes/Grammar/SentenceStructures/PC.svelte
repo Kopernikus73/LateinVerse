@@ -1,53 +1,54 @@
 <script lang="ts">
-    import { push, link } from 'svelte-spa-router';
-
-    function goBack() {
-        push('/grammar/sentence-structures');
-    }
-
-    function handleKeyDown(event: KeyboardEvent) {
-        if (event.key === 'Enter' || event.key === ' ') {
-            event.preventDefault();
-            goBack();
-        }
-    }
+    import { push_to } from "../../../global";
 </script>
 
 <div class="main">
-    <div class="back-button">
-        <span role="button" tabindex="0" on:click={goBack} on:keydown={handleKeyDown} class="back">Back</span>
-    </div>
     <h1>Participium Coniunctum (PC)</h1>
     <div class="explanation">
         Das Participium Coniunctum ("verbundenes Partizip") ist eine Satzkonstruktion, in der ein Partizip mit einem Substantiv verbunden ist.
         <br/>
         <div class="Example" id="ex1">
             <div id="sentence">
-                Ipsa dabas capiti <strong class="pc">mixta venena</strong> tuo.
+                Discipuli <strong class="pc">| multum scripti |</strong> magistrum delectant.
             </div>
-            Hier steht das Partizip (mixta) im <strong class="pc">Akkusativ Plural Neutrum</strong> und das Substantiv (venena) ebenso, da die Beiden Wörter KNG kongruent sind. <br/>
-            Zudem liegt das Partizip hier als <a href=" " use:link={"/grammar/participium/ppp"}>PPP</a> vor,  wodurch eine Vorzeitigkeit bewirkt wird (Der Satz passt sich dem Partizip an).
+            Hier steht das Partizip (scripti) im <strong class="pc">Nominativ Plural Maskulinum</strong> und das Substantiv (discipuli) ebenso, da die Beiden Wörter KNG kongruent sind. <br/>
+            Zudem liegt das Partizip hier als
+            <a href=" " on:click={push_to("/grammar/participium/ppp")}>PPP</a>
+            vor,  wodurch eine Vorzeitigkeit bewirkt wird (Der Satz passt sich dem Partizip an). <br/>
         </div>
+        <div class="info">
+            Um den PC korrekt übersetzen zu können, wird in den meisten Fällen (sonst angegeben) eine Trennung des Satzes hinter dem Substantiv und hinter dem Partizip vorgenommen. (Wie im Beispiel markiert)
+            <br/>
+            Somit können die Satzteile jeweils getrennt übersetzt werden: <br>
+            <div id="indent1">
+                a) Discipuli magistrum delectant -> Die Schüler erfreuen den Lehrer<br>
+                b) multum scripti -> haben viel geschrieben
+            </div>
+            ﻿
+        </div>
+
         <div class="types">
             Ein PC kann unterschiedlich übersetzt werden. Die Art und Weise der Übersetzung muss je nach Kontext entschieden werden. <br/><br/>
             Übersetzung als: <br/>
             <div class="types">
                 <strong id="types">Attribut</strong>:
                 <div id="indent1">
-                    a) wörtlich: "Du selbst gabst deinem Kopf <strong class="pc">gemischte Gifte</strong>." <br/>
-                    b) Relativsatz: "Du selbst gabst deinem Kopf <strong class="pc">Gifte, die gemischt worden waren</strong>." (Vorzeitigkeit!) <strong class="important">Kann fast immer genutz werden!</strong> <br/>
+                    a) wörtlich: "Die Schüler erfreuen den Lehrer <strong class="pc"> mit viel Geschriebenem</strong>." <br/>
+                    b) Relativsatz: "Die Schüler, <strong class="pc">die viel geschrieben haben</strong>, erfreuen den Lehrer." (Vorzeitigkeit!) <strong class="important">Kann fast immer genutz werden!</strong> <br/>
                 </div>
                 <br/>
                 <strong id="types">Konjunktionaler Nebensatz</strong>:
                 <div id="indent1">
-                    a) temporal (Zeit): "Du selbst gabst deinem Kopf <strong class="pc">Gifte, nachdem sie gemischt worden waren</strong>." [nachdem, während, als] <br/>
-                    b) kausal (Grund): "Du selbst gabst deinem Kopf <strong class="pc">Gifte, weil sie gemischt worden waren</strong>." [weil, da] <br/>
-                    c) konzessiv (Wiederspruch?): "Du selbst gabst deinem Kopf <strong class="pc">Gifte, obwohl sie gemischt worden waren</strong>." [obwohl] <br/>
-                    d) modal (Folge?): "Du selbst gabst deinem Kopf <strong class="pc">Gifte, indem sie gemischt worden waren</strong>." [indem, (wodurch?)] <br/>
+                    a) temporal (Zeit): "Die Schüler erfreuen den Lehrer, <strong class="pc">nachdem sie viel geschrieben haben</strong>." [nachdem, während, als] <br/>
+                    b) kausal (Grund): "Die Schüler erfreuen den Lehrer, <strong class="pc">weil sie viel geschrieben haben</strong>." [weil, da] <br/>
+                    c) konzessiv (Widerspruch): "Die Schüler erfreuen den Lehrer, <strong class="pc">obwohl sie viel geschrieben haben</strong>." [obwohl] <br/>
+                    d) modal (Art und Weise): "Die Schüler erfreuen den Lehrer, <strong class="pc">indem sie viel geschrieben haben</strong>." [indem] <br/>
                 </div>
             </div>
         </div>
     </div>
+    <br><br>
+    *Die Beispiele beziehen sich hier lediglich auf das <a href=" " on:click={push_to("/grammar/participium/ppp")}>PPP</a>, können allerdings ebenso auf das <a href=" " on:click={push_to("/grammar/participium/ppa")}>PPA</a> angewandt werden.
 </div>
 
 <style>
@@ -88,13 +89,13 @@
         font-weight: bold;
     }
 
-    .Example a {
-        color: #00788f;
+    a {
+        color: #4181ff;
         text-decoration: none;
         font-weight: bold;
     }
 
-    .Example a:hover {
+    a:hover {
         text-decoration: underline;
     }
 
@@ -106,47 +107,5 @@
         border-bottom: 2px solid #005f73;
         margin-bottom: 1rem;
         padding-bottom: 0.5rem;
-    }
-
-    span {
-        display: inline-block;
-        padding: 10px 20px;
-        color: #ffffff;
-        font-size: 1.5rem;
-        width: 10rem;
-        font-weight: bold;
-        text-align: center;
-        border-radius: 8px;
-        border: #fff solid 2px;
-        cursor: pointer;
-        transition: background-color 0.3s, transform 0.2s;
-        text-decoration: none;
-    }
-
-    span.back{
-        background-color: darkred;
-        width: 3.5rem;
-        font-size: 1rem;
-        display: inline-block;
-        padding: 10px 20px;
-        color: #ffffff;
-        font-weight: bold;
-        text-align: center;
-        border-radius: 8px;
-        border: #fff solid 2px;
-        cursor: pointer;
-        transition: background-color 0.3s, transform 0.2s;
-        text-decoration: none;
-    }
-    span.back:hover {
-        transform: scale(1.2);
-        background-color: red;
-    }
-    .back-button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 0.5rem;
-        padding-bottom: -1cm;
     }
 </style>
